@@ -1,0 +1,36 @@
+
+name: Newsroom AI - Monitorizare presa
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  monitorizare:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descarca proiectul
+        uses: actions/checkout@v4
+
+      - name: Instaleaza Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instaleaza dependentele
+        run: pip install -r requirements.txt
+
+      - name: Monitorizeaza presa
+        run: python monitor.py
+
+      - name: Salveaza rezultatele
+        uses: actions/upload-artifact@v4
+        with:
+          name: rezultate-monitorizare
+          path: stiri_detectate.json
+          retention-days: 7
