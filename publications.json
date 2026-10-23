@@ -1,0 +1,32 @@
+{
+  "publications": [
+    {
+      "name": "CT24",
+      "domain": "ct24.ro",
+      "type": "general_news",
+      "scope": ["local", "regional", "national", "international"],
+      "all_categories": true
+    },
+    {
+      "name": "InfoCTA",
+      "domain": "infocta.ro",
+      "type": "general_news",
+      "scope": ["local", "regional", "national", "international"],
+      "all_categories": true
+    },
+    {
+      "name": "ExclusivCT",
+      "domain": "exclusivct.ro",
+      "type": "general_news",
+      "scope": ["local", "regional", "national", "international"],
+      "all_categories": true
+    },
+    {
+      "name": "CTInfo",
+      "domain": "ctinfo.ro",
+      "type": "general_news",
+      "scope": ["local", "regional", "national", "international"],
+      "all_categories": true
+    }
+  ]
+}

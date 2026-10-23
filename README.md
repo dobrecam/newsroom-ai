@@ -1,2 +1,2 @@
 # newsroom-ai
-Private editorial management sistem
+Platforma editoriala AI pentru monitorizarea si redactarea știrilor
